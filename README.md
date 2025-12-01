@@ -50,7 +50,7 @@ All models performed exceptionally well, indicating that this dataset has strong
 | **LSTM** | >99% | <1.0% | Learned Embeddings | Slow (~5 min) |
 | **DistilBERT** | **>99.5%** | **<0.5%** | Contextual Embeddings | Slowest (Needs GPU) |
 
-*Note: Exact values may vary slightly across runs due to random initialization.*
+*Note: For the Deep Learning models (CNN, LSTM, BERT), we utilized a stratified subset of the training data to demonstrate feasibility and rapid prototyping. Despite using less than 20% of the available training data, these models converged to near-perfect accuracy, demonstrating the extreme data efficiency of pre-trained transformers like BERT for this specific task.*
 
 **Naive Bayes** provided a strong baseline, proving that simple word usage is highly predictive.
 **CNN and LSTM** improved upon this by capturing local phrases and sentence structure.
