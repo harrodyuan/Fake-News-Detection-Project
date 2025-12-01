@@ -7511,7 +7511,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4938d3a7">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cb3b526b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7522,7 +7522,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0aeea5f4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ef550cc1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7534,7 +7534,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4961c312">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=05d46690">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7555,7 +7555,7 @@ We aim to benchmark various NLP techniques to identify the most effective method
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=96c58e2b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=09453805">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7583,7 +7583,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=46b84aa3">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dcfc4ee9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7591,7 +7591,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
@@ -7618,10 +7618,10 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 <span class="kn">from</span><span class="w"> </span><span class="nn">transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">DistilBertTokenizerFast</span><span class="p">,</span> <span class="n">DistilBertForSequenceClassification</span><span class="p">,</span> <span class="n">Trainer</span><span class="p">,</span> <span class="n">TrainingArguments</span>
 
 <span class="c1"># Ensure nltk resources</span>
-<span class="k">try</span><span class="p">:</span>
-    <span class="n">nltk</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'corpora/stopwords'</span><span class="p">)</span>
-<span class="k">except</span> <span class="ne">LookupError</span><span class="p">:</span>
-    <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">'stopwords'</span><span class="p">)</span>
+<span class="c1"># try:</span>
+<span class="c1">#     nltk.data.find('corpora/stopwords')</span>
+<span class="c1"># except LookupError:</span>
+<span class="c1">#     nltk.download('stopwords')</span>
 
 <span class="c1"># Setup Device (MPS for Mac, CUDA for NVIDIA, else CPU)</span>
 <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">backends</span><span class="o">.</span><span class="n">mps</span><span class="o">.</span><span class="n">is_available</span><span class="p">():</span>
@@ -7638,7 +7638,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=53fc511d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=81a93be4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7646,7 +7646,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">clean_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<div class="highlight hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">clean_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="n">text</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
     <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'[^\w\s]'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
     <span class="n">stop_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">'english'</span><span class="p">))</span>
@@ -7673,7 +7673,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f48dc0f0">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7841dd74">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7683,7 +7683,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=08ba40f1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e2e076ba">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7691,7 +7691,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Unsupervised: LDA</span>
+<div class="highlight hl-python"><pre><span></span><span class="c1"># Unsupervised: LDA</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Running LDA Topic Modeling..."</span><span class="p">)</span>
 <span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">max_df</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">min_df</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">stop_words</span><span class="o">=</span><span class="s1">'english'</span><span class="p">)</span>
 <span class="n">tfidf</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'clean_text'</span><span class="p">])</span>
@@ -7719,7 +7719,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e4d7b3df">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6d46c753">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7729,7 +7729,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6da89701">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=65841cef">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7737,7 +7737,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Prepare Data for Scikit-Learn Models</span>
+<div class="highlight hl-python"><pre><span></span><span class="c1"># Prepare Data for Scikit-Learn Models</span>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'clean_text'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'label'</span><span class="p">],</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Vectorizing for traditional models..."</span><span class="p">)</span>
@@ -7763,7 +7763,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=948be3bf">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=82ae4969">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7771,12 +7771,18 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Prepare Data for PyTorch Models (CNN/LSTM)</span>
+<div class="highlight hl-python"><pre><span></span><span class="c1"># Prepare Data for PyTorch Models (CNN/LSTM)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Preparing data for Deep Learning models..."</span><span class="p">)</span>
 
+<span class="c1"># Use a subset for faster training in demonstration</span>
+<span class="n">subset_size</span> <span class="o">=</span> <span class="mi">5000</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Subsampling to </span><span class="si">{</span><span class="n">subset_size</span><span class="si">}</span><span class="s2"> samples for CNN/LSTM training speed..."</span><span class="p">)</span>
+<span class="n">X_train_dl</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[:</span><span class="n">subset_size</span><span class="p">]</span>
+<span class="n">y_train_dl</span> <span class="o">=</span> <span class="n">y_train</span><span class="p">[:</span><span class="n">subset_size</span><span class="p">]</span>
+
 <span class="c1"># Tokenize</span>
-<span class="n">X_train_tokens</span> <span class="o">=</span> <span class="p">[</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">X_train</span><span class="p">]</span>
-<span class="n">X_test_tokens</span> <span class="o">=</span> <span class="p">[</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">X_test</span><span class="p">]</span>
+<span class="n">X_train_tokens</span> <span class="o">=</span> <span class="p">[</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">X_train_dl</span><span class="p">]</span>
+<span class="n">X_test_tokens</span> <span class="o">=</span> <span class="p">[</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">X_test</span><span class="p">]</span> <span class="c1"># Keep full test set for fair eval</span>
 
 <span class="c1"># Build Vocabulary</span>
 <span class="n">word_counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">()</span>
@@ -7817,7 +7823,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
     <span class="k">return</span> <span class="n">text_list</span><span class="p">,</span> <span class="n">label_list</span>
 
 <span class="n">BATCH_SIZE</span> <span class="o">=</span> <span class="mi">64</span>
-<span class="n">train_ds</span> <span class="o">=</span> <span class="n">TextDataset</span><span class="p">(</span><span class="n">X_train_tokens</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">vocab</span><span class="p">)</span>
+<span class="n">train_ds</span> <span class="o">=</span> <span class="n">TextDataset</span><span class="p">(</span><span class="n">X_train_tokens</span><span class="p">,</span> <span class="n">y_train_dl</span><span class="p">,</span> <span class="n">vocab</span><span class="p">)</span>
 <span class="n">test_ds</span> <span class="o">=</span> <span class="n">TextDataset</span><span class="p">(</span><span class="n">X_test_tokens</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">vocab</span><span class="p">)</span>
 <span class="n">train_loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">train_ds</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">BATCH_SIZE</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">collate_fn</span><span class="o">=</span><span class="n">collate_batch</span><span class="p">)</span>
 <span class="n">test_loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">test_ds</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">BATCH_SIZE</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">collate_fn</span><span class="o">=</span><span class="n">collate_batch</span><span class="p">)</span>
@@ -7826,7 +7832,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bf018b90">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=84c2ad32">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7834,7 +7840,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 3. CNN Model</span>
+<div class="highlight hl-python"><pre><span></span><span class="c1"># 3. CNN Model</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">TextCNN</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">,</span> <span class="n">num_filters</span><span class="p">,</span> <span class="n">kernel_sizes</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">TextCNN</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
@@ -7863,7 +7869,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">cnn_model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
 
 <span class="c1"># Short training loop for demo</span>
-<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
     <span class="n">cnn_model</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">texts</span><span class="p">,</span> <span class="n">labels</span> <span class="ow">in</span> <span class="n">train_loader</span><span class="p">:</span>
         <span class="n">texts</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">texts</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">),</span> <span class="n">labels</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
@@ -7890,7 +7896,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=23e9f326">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0a120021">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7898,7 +7904,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 4. LSTM Model</span>
+<div class="highlight hl-python"><pre><span></span><span class="c1"># 4. LSTM Model</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">TextLSTM</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">,</span> <span class="n">hidden_dim</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">TextLSTM</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
@@ -7918,7 +7924,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 <span class="n">lstm_model</span> <span class="o">=</span> <span class="n">TextLSTM</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">vocab</span><span class="p">),</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">lstm_model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
 
-<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
     <span class="n">lstm_model</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">texts</span><span class="p">,</span> <span class="n">labels</span> <span class="ow">in</span> <span class="n">train_loader</span><span class="p">:</span>
         <span class="n">texts</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">texts</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">),</span> <span class="n">labels</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
@@ -7945,7 +7951,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f11b848d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=316336ed">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7953,7 +7959,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 5. DistilBERT</span>
+<div class="highlight hl-python"><pre><span></span><span class="c1"># 5. DistilBERT</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">--- Training DistilBERT ---"</span><span class="p">)</span>
 <span class="c1"># Use subset for speed in notebook generation</span>
 <span class="n">train_subset_size</span> <span class="o">=</span> <span class="mi">2000</span> 
@@ -8010,7 +8016,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f5ee693a">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a8abb197">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8061,7 +8067,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0d584041">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7404c670">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8069,7 +8075,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Final Comparison Visualization</span>
+<div class="highlight hl-python"><pre><span></span><span class="c1"># Final Comparison Visualization</span>
 <span class="n">accuracies</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">'Naive Bayes'</span><span class="p">:</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_nb</span><span class="p">),</span>
     <span class="s1">'MLP'</span><span class="p">:</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_mlp</span><span class="p">),</span>
@@ -8099,7 +8105,7 @@ Models were evaluated using <strong>Accuracy</strong>, <strong>Precision</strong
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f751cc70">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=df32d7fe">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>

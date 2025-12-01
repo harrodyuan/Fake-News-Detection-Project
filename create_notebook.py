@@ -224,9 +224,15 @@ code_torch_prep = """
 # Prepare Data for PyTorch Models (CNN/LSTM)
 print("\\nPreparing data for Deep Learning models...")
 
+# Use a subset for faster training in demonstration
+subset_size = 5000
+print(f"Subsampling to {subset_size} samples for CNN/LSTM training speed...")
+X_train_dl = X_train[:subset_size]
+y_train_dl = y_train[:subset_size]
+
 # Tokenize
-X_train_tokens = [text.split() for text in X_train]
-X_test_tokens = [text.split() for text in X_test]
+X_train_tokens = [text.split() for text in X_train_dl]
+X_test_tokens = [text.split() for text in X_test] # Keep full test set for fair eval
 
 # Build Vocabulary
 word_counts = Counter()
@@ -267,7 +273,7 @@ def collate_batch(batch):
     return text_list, label_list
 
 BATCH_SIZE = 64
-train_ds = TextDataset(X_train_tokens, y_train, vocab)
+train_ds = TextDataset(X_train_tokens, y_train_dl, vocab)
 test_ds = TextDataset(X_test_tokens, y_test, vocab)
 train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True, collate_fn=collate_batch)
 test_loader = DataLoader(test_ds, batch_size=BATCH_SIZE, shuffle=False, collate_fn=collate_batch)
@@ -303,7 +309,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(cnn_model.parameters(), lr=0.001)
 
 # Short training loop for demo
-for epoch in range(3):
+for epoch in range(2):
     cnn_model.train()
     for texts, labels in train_loader:
         texts, labels = texts.to(device), labels.to(device)
@@ -348,7 +354,7 @@ print("\\n--- Training LSTM ---")
 lstm_model = TextLSTM(len(vocab), 100, 100, 2).to(device)
 optimizer = optim.Adam(lstm_model.parameters(), lr=0.001)
 
-for epoch in range(3):
+for epoch in range(2):
     lstm_model.train()
     for texts, labels in train_loader:
         texts, labels = texts.to(device), labels.to(device)
